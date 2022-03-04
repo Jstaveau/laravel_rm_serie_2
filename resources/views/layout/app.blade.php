@@ -40,6 +40,9 @@
         @yield('content')
     </main>
     <script src="{{ asset('js/app.js') }}"></script>
+    <footer class="bg-dark text-center p-2">
+        <h1 class="text-light">footer</h1>
+    </footer>
 </body>
 
 </html>
