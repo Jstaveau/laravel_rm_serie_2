@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class Pg3Controller extends Controller
+{
+    function index (){
+        return view("pages.page3");
+    }
+}

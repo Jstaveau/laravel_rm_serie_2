@@ -32,15 +32,18 @@
                     <li class="nav-item">
                         <a class="nav-link {{Request::is("pg3") ? "active" : ""}}" href="{{route("page3")}}">Page3</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{Request::is("pg4") ? "active" : ""}}" href="{{route("page4")}}">Page4</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main>
+    <main class="container">
         @yield('content')
     </main>
     <script src="{{ asset('js/app.js') }}"></script>
-    <footer class="bg-dark text-center p-2">
+    <footer class="bg-dark text-center p-2 fixed-bottom">
         <h1 class="text-light">footer</h1>
     </footer>
 </body>
