@@ -21,16 +21,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                        <a class="nav-link {{Request::is("/") ? "active" : ""}}" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route("page1")}}">Page1</a>
+                        <a class="nav-link {{Request::is("pg1") ? "active" : ""}}" href="{{route("page1")}}">Page1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route("page2")}}">Page2</a>
+                        <a class="nav-link {{Request::is("pg2") ? "active" : ""}}" href="{{route("page2")}}">Page2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route("page3")}}">Page3</a>
+                        <a class="nav-link {{Request::is("pg3") ? "active" : ""}}" href="{{route("page3")}}">Page3</a>
                     </li>
                 </ul>
             </div>
